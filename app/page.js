@@ -1,5 +1,5 @@
 export default async function Home() {
-  const res = await fetch('http://localhost:3000/api/metrics', { cache: 'no-store' });
+  const res = await fetch('/api/metrics', { cache: 'no-store' });
   const { rows } = await res.json();
 
   return (
